@@ -1,0 +1,8 @@
+<%= render :layout => 'layouts/file' do %>
+  <script type="text/javascript">  
+	function resizeIframe(obj) {
+	 obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	}
+  </script>
+  <%= preview_docx_tag @attachment, :size => 800 %>
+<% end %>
